@@ -40,5 +40,5 @@ nb tweet avec 0 fav
 average RT
 average FAV
 
-
+Je pense qu'il faudrait faire un barre de recherche
 Split la journée en 2 : une heure matinée et une heure soir
