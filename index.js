@@ -58,7 +58,28 @@ app.post("/user", function(req, res) {
       TwitGet('users/show', req.body)
     ])
     .then(function(data) {
-      var user = {
+      // Metrics
+
+      var totalRetweet = 0,
+        tweetZeroRT = 0,
+        totalFav = 0,
+        tweetZeroFAV = 0;
+
+      data[0].forEach(function(tweet, index) {
+        totalRetweet += tweet.retweet_count || 0;
+        totalFav += tweet.favorite_count || 0;
+        if (!tweet.retweeted)
+          tweetZeroRT += 1;
+        if (!tweet.favorited)
+          tweetZeroFAV += 1;
+      });
+      var metrics = {
+          totalRetweet: totalRetweet,
+          totalFav: totalFav,
+          tweetZeroRT: tweetZeroRT,
+          tweetZeroFAV: tweetZeroFAV
+        },
+        user = {
           id: data[1].id,
           name: data[1].name,
           screen_name: data[1].screen_name,
@@ -66,18 +87,19 @@ app.post("/user", function(req, res) {
           friends_count: data[1].friends_count,
           favourites_count: data[1].favourites_count,
           statuses_count: data[1].statuses_count,
-          profile_image_url: data[1].profile_image_url
+          profile_image_url: data[1].profile_image_url,
+          metrics: metrics
         },
-        tweets = data[0].map(function(obj){
+        tweets = data[0].map(function(obj) {
           var rObj = {
-            id : obj.id,
+            id: obj.id,
             created_at: obj.created_at,
             retweet_count: obj.retweet_count,
             favorite_count: obj.favorite_count,
             favorited: obj.favorited,
             retweeted: obj.retweeted,
             // Manque des replies
-            engagement: (obj.favorite_count + obj.retweet_count)/ obj.user.followers_count
+            engagement: (obj.favorite_count + obj.retweet_count) / obj.user.followers_count
           };
           return rObj;
         });
