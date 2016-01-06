@@ -47,6 +47,23 @@ var TwitGet = function(link, options, callback) {
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
+
+app.get("/search/:id", function(req, res) {
+  if (!req.params)
+    res.status(400).json({
+      "message": "Missing id /:id"
+    });
+  else
+    T.get('users/show', options, function(err, user) {
+      if (!user)
+        res.status(400).json({
+          "message": "not found"
+        });
+      else
+        res.status(200).json(user);
+    });
+});
+
 app.post("/user", function(req, res) {
   req.body.count = '3200';
   if (!req.body || !req.body.screen_name)
@@ -79,8 +96,8 @@ app.post("/user", function(req, res) {
             totalFav: totalFav,
             tweetZeroRT: tweetZeroRT,
             tweetZeroFAV: tweetZeroFAV,
-            averageRT: (totalRetweet/data[0].length),
-            averageFAV: (totalFav/data[0].length)
+            averageRT: (totalRetweet / data[0].length),
+            averageFAV: (totalFav / data[0].length)
           };
         })(),
         user = {
