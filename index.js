@@ -78,7 +78,9 @@ app.post("/user", function(req, res) {
             totalRetweet: totalRetweet,
             totalFav: totalFav,
             tweetZeroRT: tweetZeroRT,
-            tweetZeroFAV: tweetZeroFAV
+            tweetZeroFAV: tweetZeroFAV,
+            averageRT: (totalRetweet/data[0].length),
+            averageFAV: (totalFav/data[0].length)
           };
         })(),
         user = {
