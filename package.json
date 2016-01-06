@@ -22,6 +22,7 @@
   "gitHead": "40d721c0d5b25b1b852d0474ad7fd144503acda5",
   "dependencies": {
     "body-parser": "~1.14.2",
+    "colors": "^1.1.2",
     "express": "~4.13.3",
     "lodash": "~3.10.1",
     "machine_learning": "0.0.8",

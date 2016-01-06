@@ -5,6 +5,7 @@ var express = require("express"),
   Q = require('q'),
   bodyParser = require('body-parser'),
   Twit = require('twit'),
+  colors = require('colors'),
   port = process.env.PORT || 5000;
 // Variables de ftp env utilisées
 
@@ -112,4 +113,4 @@ app.post("/user", function(req, res) {
 });
 
 app.listen(port);
-console.log("running on localhost:" + port);
+console.log("running on localhost:".underline.red + port);
