@@ -14,3 +14,7 @@ results
 node_modules
 npm-debug.log
 /.svn
+
+.DS_Store
+*.*~
+.sass-cache
