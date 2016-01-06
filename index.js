@@ -111,24 +111,5 @@ app.post("/user", function(req, res) {
     });
 });
 
-
-/**
- * Get les 200 derniers tweets du compte passé en option
- **/
-
-/*T.get('statuses/user_timeline', options, function(err, data) {
-  /*  console.log('tweets : ');
-    console.log(data);
-  for (var i = 0; i < data.length; i++) {
-    console.log(i + ' ' + data[i].text);
-  });
-});*/
-
-/*
-T.get('users/show', options, function(err, data) {
- ///console.log(data);
-})*/
-
-
 app.listen(port);
 console.log("running on localhost:" + port);
