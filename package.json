@@ -18,5 +18,9 @@
   "author": "Les6pc",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "40d721c0d5b25b1b852d0474ad7fd144503acda5"
+  "gitHead": "40d721c0d5b25b1b852d0474ad7fd144503acda5",
+  "dependencies": {
+    "express": "~4.13.3",
+    "tuiter": "~0.2.12"
+  }
 }
