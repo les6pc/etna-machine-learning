@@ -59,26 +59,27 @@ app.post("/user", function(req, res) {
     ])
     .then(function(data) {
       // Metrics
+      var metrics = (function() {
+          var totalRetweet = 0,
+            tweetZeroRT = 0,
+            totalFav = 0,
+            tweetZeroFAV = 0;
 
-      var totalRetweet = 0,
-        tweetZeroRT = 0,
-        totalFav = 0,
-        tweetZeroFAV = 0;
-
-      data[0].forEach(function(tweet, index) {
-        totalRetweet += tweet.retweet_count || 0;
-        totalFav += tweet.favorite_count || 0;
-        if (!tweet.retweeted)
-          tweetZeroRT += 1;
-        if (!tweet.favorited)
-          tweetZeroFAV += 1;
-      });
-      var metrics = {
-          totalRetweet: totalRetweet,
-          totalFav: totalFav,
-          tweetZeroRT: tweetZeroRT,
-          tweetZeroFAV: tweetZeroFAV
-        },
+          data[0].forEach(function(tweet, index) {
+            totalRetweet += tweet.retweet_count || 0;
+            totalFav += tweet.favorite_count || 0;
+            if (!tweet.retweeted)
+              tweetZeroRT += 1;
+            if (!tweet.favorited)
+              tweetZeroFAV += 1;
+          });
+          return {
+            totalRetweet: totalRetweet,
+            totalFav: totalFav,
+            tweetZeroRT: tweetZeroRT,
+            tweetZeroFAV: tweetZeroFAV
+          };
+        })(),
         user = {
           id: data[1].id,
           name: data[1].name,
