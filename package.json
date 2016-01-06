@@ -22,6 +22,8 @@
   "dependencies": {
     "express": "~4.13.3",
     "tuiter": "~0.2.12",
-    "machine_learning": "0.0.8"
+    "machine_learning": "0.0.8",
+    "body-parser": "~1.14.2",
+    "lodash": "~3.10.1"
   }
 }
