@@ -1,3 +1,13 @@
+### Routes:
+```
+POST /user
+
+{
+  screen_name: 'value',  Without the '@'
+}
+
+```
+
 USER
 ------------------
 id
@@ -9,7 +19,7 @@ favourites_count
 statuses_count
 profile_image_url
 
-TWEET 
+TWEET
 -----------------
 id
 created_at
