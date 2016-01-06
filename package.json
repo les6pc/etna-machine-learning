@@ -1,31 +1,22 @@
 {
-  "name": "twitter-listbot",
-  "description": "A robot that retweets the contents of a twitter list.",
+  "name": "etna-machine-learning",
   "version": "0.0.1",
-  "homepage": "https://github.com/bryanbraun/twitter-listbot",
-  "main": "index.js",
+  "description": "School Project by Les 6 Pc",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bryanbraun/twitter-listbot.git"
+    "url": "https://github.com/les6pc/etna-machine-learning.git"
   },
-  "bugs": {
-    "url": "https://github.com/bryanbraun/twitter-listbot/issues"
-  },
-  "dependencies": {
-    "tuiter": "~0.2.12",
-    "express": "~4.9.0"
-  },
-  "devDependencies": {},
-  "optionalDependencies": {},
-  "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
-  },
-  "author": {
-    "name": "Bryan Braun",
-    "email": "bbraun7@gmail.com",
-    "url": "http://www.bryanbraun.com"
-  },
-  "private": true,
-  "license": "MIT"
+  "keywords": [
+    "Node.js",
+    "Machine",
+    "learning"
+  ],
+  "author": "Les6pc",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "40d721c0d5b25b1b852d0474ad7fd144503acda5"
 }
