@@ -119,13 +119,13 @@ var tu = require('tuiter')(config.keys);
 var Twit = require('twit');
 
 var T = new Twit({
-	consumer_key: '0BEoRbxt3UYV808T6cHZCmO2i',
-	consumer_secret: 'S2eeRHrlweoBzhilTQm8FPg9RVVSyxzN599CtW9QtvKqUgmtpF',
-	access_token: '423806753-JtJ2O1Pa4t3CIdAIiCqWOtFbycQHmR6cXVDZSIHb',
-	access_token_secret: 'RY9o3wL84wuTwT8c8TlU9xAlVej6AM5FmNjf8JqIHaUl0'
+	consumer_key: config_t.TWITTER_CONSUMER_KEY,
+	consumer_secret: config_t.TWITTER_CONSUMER_SECRET,
+	access_token: config_t.TWITTER_ACCESS_TOKEN_KEY,
+	access_token_secret: config_t.TWITTER_ACCESS_TOKEN_SECRET
 })
 
-var options = { screen_name: 'DylanGDFR', count: '3200' };
+var options = { screen_name: 'EarvinKayonga', count: '3200' };
 
 /**
 * Get les 200 derniers tweets du compte passé en option
