@@ -20,10 +20,11 @@
   "readmeFilename": "README.md",
   "gitHead": "40d721c0d5b25b1b852d0474ad7fd144503acda5",
   "dependencies": {
-    "express": "~4.13.3",
-    "tuiter": "~0.2.12",
-    "machine_learning": "0.0.8",
     "body-parser": "~1.14.2",
-    "lodash": "~3.10.1"
+    "express": "~4.13.3",
+    "lodash": "~3.10.1",
+    "machine_learning": "0.0.8",
+    "tuiter": "~0.2.12",
+    "twit": "^2.1.1"
   }
 }
