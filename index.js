@@ -58,8 +58,7 @@ app.post("/user", function(req, res) {
       TwitGet('users/show', req.body)
     ])
     .then(function(data) {
-      var tweets = data[0],
-        user = {
+      var user = {
           id: data[1].id,
           name: data[1].name,
           screen_name: data[1].screen_name,
@@ -68,7 +67,20 @@ app.post("/user", function(req, res) {
           favourites_count: data[1].favourites_count,
           statuses_count: data[1].statuses_count,
           profile_image_url: data[1].profile_image_url
-        };
+        },
+        tweets = data[0].map(function(obj){
+          var rObj = {
+            id : obj.id,
+            created_at: obj.created_at,
+            retweet_count: obj.retweet_count,
+            favorite_count: obj.favorite_count,
+            favorited: obj.favorited,
+            retweeted: obj.retweeted,
+            // Manque des replies
+            engagement: (obj.favorite_count + obj.retweet_count)/ obj.user.followers_count
+          };
+          return rObj;
+        });
       res.json({
         "user": user,
         "tweets": tweets

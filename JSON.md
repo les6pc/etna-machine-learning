@@ -29,6 +29,7 @@ favorited
 retweeted
 engagement = (fav + rt + replies) / followers
 // Pour les replies : boucler sur in_reply_to_status_id
+// Qualifier la valeur ?
 
 METRICS
 -----------------
