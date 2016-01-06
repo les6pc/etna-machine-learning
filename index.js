@@ -109,12 +109,36 @@ var tu = require('tuiter')(config.keys);
 
 // Lance l'application. La callback recupere la liste des membres
 // sur l'écoute avant de traiter via l'api.
-getListMembers(listen);
+//getListMembers(listen);
 
+/**
+* Définie les options pour la seconde app
+* Ici on utilise twit pour faire les appels
+*/
 
-/*var params = {screen_name: 'DylanGDFR'};
-client.get('statuses/user_timeline', params, function(error, tweets, response){
-  if (!error) {
-    console.log(tweets);
+var Twit = require('twit');
+
+var T = new Twit({
+	consumer_key: '0BEoRbxt3UYV808T6cHZCmO2i',
+	consumer_secret: 'S2eeRHrlweoBzhilTQm8FPg9RVVSyxzN599CtW9QtvKqUgmtpF',
+	access_token: '423806753-JtJ2O1Pa4t3CIdAIiCqWOtFbycQHmR6cXVDZSIHb',
+	access_token_secret: 'RY9o3wL84wuTwT8c8TlU9xAlVej6AM5FmNjf8JqIHaUl0'
+})
+
+var options = { screen_name: 'DylanGDFR', count: '3200' };
+
+/**
+* Get les 200 derniers tweets du compte passé en option
+**/
+T.get('statuses/user_timeline', options , function(err, data) {
+  for (var i = 0; i < data.length ; i++) {
+    console.log(i + ' ' + data[i].text);
   }
-});*/
+})
+
+/**
+* Get les infos du compte passé en option
+**/
+T.get('users/show', options , function(err, data) {
+    console.log(data);
+})
