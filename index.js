@@ -138,16 +138,17 @@ var options = {
  * Get les 200 derniers tweets du compte passé en option
  **/
 T.get('statuses/user_timeline', options, function(err, data) {
-    console.log('tweets : ');
+  /*  console.log('tweets : ');
     console.log(data);
-  /*for (var i = 0; i < data.length; i++) {
+  for (var i = 0; i < data.length; i++) {
     console.log(i + ' ' + data[i].text);
   }*/
-})
+  console.log(data[0]);
+});
 
 /**
  * Get les infos du compte passé en option
  **/
 T.get('users/show', options, function(err, data) {
- // console.log(data);
+ ///console.log(data);
 })
