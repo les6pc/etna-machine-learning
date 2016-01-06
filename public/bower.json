@@ -1,0 +1,24 @@
+{
+  "name": "etna machine learning",
+  "homepage": "https://github.com/les6pc/etna-machine-learning",
+  "authors": [
+    "EarvinKayonga <demoneartin@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
