@@ -1,7 +1,7 @@
 // START HEROKU
 var express = require("express");
 var app = express();
-var config = require("./pwd.js");
+var config_t = require("./pwd.js");
 app.get('/', function(req, res){ res.send('Récupération des tweets.'); });
 app.listen(process.env.PORT || 5000);
 // END HEROKU
@@ -16,10 +16,10 @@ var config = {
     regexReject: '^@', // et on rejette tous les tweets avec ce pattern
 	
     keys: {
-        consumer_key: config.TWITTER_CONSUMER_KEY,
-        consumer_secret: config.TWITTER_CONSUMER_SECRET,
-        access_token_key: config.TWITTER_ACCESS_TOKEN_KEY,
-        access_token_secret: config.TWITTER_ACCESS_TOKEN_SECRET
+        consumer_key: config_t.TWITTER_CONSUMER_KEY,
+        consumer_secret: config_t.TWITTER_CONSUMER_SECRET,
+        access_token_key: config_t.TWITTER_ACCESS_TOKEN_KEY,
+        access_token_secret: config_t.TWITTER_ACCESS_TOKEN_SECRET
     },
 };
 
