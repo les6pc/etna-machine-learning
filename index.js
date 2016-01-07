@@ -54,7 +54,10 @@ app.get("/search/:id", function(req, res) {
       "message": "Missing id /:id"
     });
   else
-    T.get('users/show', options, function(err, user) {
+    T.get('users/show', {
+      screen_name: req.params.id,
+      count: 3200
+    }, function(err, user) {
       if (!user)
         res.status(400).json({
           "message": "not found"
