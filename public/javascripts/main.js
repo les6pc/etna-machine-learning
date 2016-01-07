@@ -166,6 +166,7 @@ jQuery(document).ready(function($){
 		var postUrl = "user";
 		$('#loader').removeClass('hidden');
 		$('#result, #profil').addClass('hidden');
+		$('#profil').removeClass('fadeInDown');
 		getJsonUser(jsonUrl);
 		postJsonUser(postUrl);
 	});
@@ -197,7 +198,7 @@ jQuery(document).ready(function($){
 	}
 
 	function profilBar(img, screen_name, name, statuses, friends, followers) {
-		$("#profil").removeClass('hidden');
+		$("#profil").removeClass('hidden').addClass('animated fadeInDown');
 		$("#img-profil").html('<img src="'+img+'" alt="profil img">');
 		$("#screen_name-profil").html("@"+screen_name);
 		$("#name-profil").html(name);
