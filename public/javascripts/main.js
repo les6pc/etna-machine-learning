@@ -162,38 +162,47 @@ jQuery(document).ready(function($){
 	$('#username-search').on('submit', function(e) {
 		e.preventDefault();
 		screen_name = $("#username").val();
-		var jsonUrl = "search/"+screen_name;
-		var postUrl = "user";
-		$('#loader').removeClass('hidden');
-		$('#result, #profil').addClass('hidden');
-		$('#profil').removeClass('fadeInDown');
-		getJsonUser(jsonUrl);
-		postJsonUser(postUrl);
+		if ( screen_name != "" ) {
+			var jsonUrl = "search/"+screen_name;
+			$('#result, #profil').addClass('hidden');
+			$('#profil').removeClass('fadeInDown');
+			getJsonUser(jsonUrl);
+		}
 	});
 
 	function getJsonUser(jsonUrl) {
+		var postUrl = "user";
 		$.getJSON(jsonUrl, function (json) {
-			$('#loader').addClass('hidden');
 			if (json.errors) {
 				$('#result').removeClass('hidden');
 			}
 			else {
 				profilBar(json.profile_image_url, json.screen_name, json.name, json.statuses_count, json.friends_count, json.followers_count);
-				if (!animating) {
-					if ($('.cd-section.is-visible').next().length > 0) smoothScroll($('.cd-section.is-visible').next());
-				}
+				postJsonUser(postUrl);
 			}
 		});
 	}
 
 	function postJsonUser(postUrl) {
 		var data = { 'screen_name' : screen_name};
+		$('#loader').removeClass('hidden');
 		$.ajax({
 		    url: postUrl,
 		    type: 'POST',
 		    data: JSON.stringify(data),
 		    contentType: 'application/json; charset=utf-8',
-		    dataType: 'json'
+		    dataType: 'json',
+		    success: function(json){
+				$('#loader').addClass('hidden');
+				if (!animating) {
+					if ($('.cd-section.is-visible').next().length > 0) smoothScroll($('.cd-section.is-visible').next());
+				}
+				showMetrics(json.user.statuses_count, json.user.metrics.totalRetweet, json.user.metrics.totalFav, json.user.metrics.tweetZeroRT, json.user.metrics.tweetZeroFAV, json.user.metrics.averageRT, json.user.metrics.averageFAV);
+			},
+			error: function(){
+				$('#loader').addClass('hidden');
+				alert('Request failed.');
+			}
 		});
 	}
 
@@ -205,5 +214,19 @@ jQuery(document).ready(function($){
 		$("#status-profil").html("<small>Tweets</small>"+statuses);
 		$("#friends-profil").html("<small>Abonnements</small>"+friends);
 		$("#followers-profil").html("<small>Abonnés</small>"+followers);
+	}
+
+	function showMetrics(statuses, totalRT, totalFav, noRT, noFav, avRT, avFav) {
+		avRT = Math.round(avRT * 10) / 10;
+		avFav = Math.round(avFav * 10) / 10;
+
+		$(".totalStatuses").html(statuses);
+		$("#totalRT").html(totalRT);
+		$("#averageRT").html(avRT);
+		$("#noRT").html(noRT);
+
+		$("#totalFav").html(totalFav);
+		$("#averageFav").html(avFav);
+		$("#noFav").html(noFav);
 	}
 });

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 /* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -11904,7 +11904,8 @@ Main Components
 #username {
   margin: 50px auto;
   display: block;
-  background: #203236;
+  background: #fff;
+  color: #263b40;
   border: none;
   height: 60px;
   width: 100%;
@@ -11916,13 +11917,13 @@ Main Components
   -moz-transition: border 0.3s linear;
   transition: border 0.3s linear;
 }
-/* line 79, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 #username:focus {
   outline: none;
   border: 3px solid #e3ca76;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 #features {
   padding: 30px 0;
   position: absolute;
@@ -11932,19 +11933,19 @@ Main Components
   color: #263b40;
   text-align: center;
 }
-/* line 92, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 #features p {
   color: #888;
   font-size: 14px;
   padding: 0 20px;
 }
-/* line 97, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 #features .fa.feature {
   font-size: 42px;
   margin-bottom: 20px;
   color: #e3ca76;
 }
-/* line 102, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 #features a {
   color: #666;
   font-size: 12px;
@@ -11952,28 +11953,28 @@ Main Components
   font-weight: bold;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 #clock {
   width: 50px;
   margin-right: -7px;
   vertical-align: bottom;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 #loader {
   text-align: center;
   font-size: 32px;
   color: #f7f7f7;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 #result p {
   text-align: center;
   font-size: 16px;
   color: #e74c3c;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 #profil {
   position: fixed;
   top: 20px;
@@ -11984,17 +11985,17 @@ Main Components
   border: 1px solid #e2e2e2;
   z-index: 100000;
 }
-/* line 137, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 #profil td {
   padding: 10px 30px 10px 10px;
 }
-/* line 140, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 #profil small {
   display: block;
   color: #c2c2c2;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .cd-section h1 {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -12003,19 +12004,19 @@ Main Components
   margin-top: -200px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 146, ../sass/style.scss */
+  /* line 148, ../sass/style.scss */
   .cd-section h1 {
     font-size: 3.2rem;
   }
 }
 @media only screen and (min-width: 1170px) {
-  /* line 146, ../sass/style.scss */
+  /* line 148, ../sass/style.scss */
   .cd-section h1 {
     font-size: 4.2rem;
   }
 }
 
-/* line 165, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .cd-block, .cd-half-block {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -12026,7 +12027,7 @@ Main Components
   backface-visibility: hidden;
 }
 
-/* line 170, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .cd-block {
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;
@@ -12034,13 +12035,14 @@ Main Components
   -o-transform-origin: center center;
   transform-origin: center center;
 }
-/* line 173, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .cd-section:first-of-type .cd-block {
   height: 100vh;
-  background-color: #263b40;
+  background-image: url("../img/bg-2.jpg");
+  background-size: cover;
 }
 @media only screen and (min-width: 1170px) {
-  /* line 170, ../sass/style.scss */
+  /* line 172, ../sass/style.scss */
   .cd-block {
     position: fixed;
     width: 100%;
@@ -12051,57 +12053,77 @@ Main Components
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
     visibility: hidden;
   }
-  /* line 189, ../sass/style.scss */
+  /* line 193, ../sass/style.scss */
   .cd-section:first-of-type .cd-block {
     visibility: visible;
   }
-  /* line 193, ../sass/style.scss */
+  /* line 197, ../sass/style.scss */
   .cd-block > * {
     visibility: visible;
   }
 }
 
-/* line 199, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
+.icon {
+  font-size: 48px;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+/* line 209, ../sass/style.scss */
+.icon .fa-heart {
+  color: #e74c3c;
+}
+/* line 212, ../sass/style.scss */
+.icon .fa-retweet {
+  color: #e3ca76;
+}
+
+/* line 217, ../sass/style.scss */
 .cd-half-block {
   background: #ffffff;
   color: #263b40;
 }
-/* line 203, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .cd-half-block:nth-of-type(1) {
   height: 60vh;
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 209, ../sass/style.scss */
-.cd-half-block:nth-of-type(2) {
-  padding: 4em 10%;
-}
-/* line 213, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .cd-half-block p {
   font-size: 1.8rem;
-  line-height: 1.8;
+  line-height: 1.2;
+  color: #888;
 }
-/* line 218, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
+.cd-half-block p span {
+  color: #263b40;
+  font-weight: bold;
+}
+/* line 237, ../sass/style.scss */
 .cd-section:nth-of-type(2) .cd-half-block:first-of-type {
   background: #f7f7f7;
 }
-/* line 222, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .cd-section:nth-of-type(3) .cd-half-block:first-of-type {
-  background: #f7f7f7;
+  background-image: url("../img/bg-1.jpg");
+  background-size: cover;
 }
-/* line 226, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .cd-section:nth-of-type(4) .cd-half-block:first-of-type {
   background: #f7f7f7;
 }
 @media only screen and (min-width: 1170px) {
-  /* line 199, ../sass/style.scss */
+  /* line 217, ../sass/style.scss */
   .cd-half-block {
     height: 100vh !important;
     width: 50%;
     position: absolute;
     top: 0;
   }
-  /* line 236, ../sass/style.scss */
+  /* line 256, ../sass/style.scss */
   .cd-half-block p {
     position: absolute;
     left: 50%;
@@ -12114,10 +12136,10 @@ Main Components
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
-    padding: 0 30%;
+    padding: 0 15%;
     font-size: 2.4rem;
   }
-  /* line 244, ../sass/style.scss */
+  /* line 264, ../sass/style.scss */
   .cd-section:nth-of-type(even) .cd-half-block:first-of-type, .cd-section:nth-of-type(odd) .cd-half-block:nth-of-type(2) {
     left: 0;
     -webkit-transform: translateX(-100%);
@@ -12126,7 +12148,7 @@ Main Components
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
-  /* line 250, ../sass/style.scss */
+  /* line 270, ../sass/style.scss */
   .cd-section:nth-of-type(odd) .cd-half-block:first-of-type, .cd-section:nth-of-type(even) .cd-half-block:nth-of-type(2) {
     right: 0;
     -webkit-transform: translateX(100%);
@@ -12137,7 +12159,7 @@ Main Components
   }
 }
 
-/* line 258, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .cd-vertical-nav {
   position: fixed;
   z-index: 1;
@@ -12151,7 +12173,7 @@ Main Components
   transform: translateY(-50%);
   display: none;
 }
-/* line 265, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .cd-vertical-nav a {
   display: block;
   height: 40px;
@@ -12165,7 +12187,7 @@ Main Components
   -moz-transition: opacity 0.2s 0s, visibility 0.2s 0s;
   transition: opacity 0.2s 0s, visibility 0.2s 0s;
 }
-/* line 278, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .cd-vertical-nav a.cd-prev {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -12174,7 +12196,7 @@ Main Components
   transform: rotate(180deg);
   margin-bottom: 10px;
 }
-/* line 283, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .cd-vertical-nav a.inactive {
   visibility: hidden;
   opacity: 0;
@@ -12183,7 +12205,7 @@ Main Components
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
 }
 @media only screen and (min-width: 1170px) {
-  /* line 258, ../sass/style.scss */
+  /* line 278, ../sass/style.scss */
   .cd-vertical-nav {
     display: block;
   }
