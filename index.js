@@ -3,10 +3,13 @@
 var express = require("express"),
   app = express(),
   config_t = require("./pwd.js"),
+  machine_learning = require("./machine_learning/compute.js"),
   Q = require('q'),
   bodyParser = require('body-parser'),
   Twit = require('twit'),
   colors = require('colors'),
+  favicon = require('serve-favicon'),
+  helmet = require('helmet'),
   port = process.env.PORT || 5000;
 // Variables de ftp env utilisées
 
@@ -47,6 +50,14 @@ var TwitGet = function(link, options, callback) {
 };
 
 app.use(bodyParser.json());
+// Use helmet to secure Express headers
+app.use(helmet.xframe());
+app.use(helmet.xssFilter());
+app.use(helmet.nosniff());
+app.use(helmet.ienoopen());
+app.disable('x-powered-by');
+app.use(bodyParser.json());
+//app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use(express.static(__dirname + "/public"));
 
 app.get("/search/:id", function(req, res) {
@@ -88,12 +99,14 @@ app.post("/user", function(req, res) {
             tweetZeroFAV = 0;
 
           data[0].forEach(function(tweet, index) {
-            totalRetweet += tweet.retweet_count || 0;
-            totalFav += tweet.favorite_count || 0;
-            if (!tweet.retweeted)
-              tweetZeroRT += 1;
-            if (!tweet.favorited)
+            if (!tweet.retweeted_status) {
+              totalFav += tweet.favorite_count;
+              totalRetweet += tweet.retweet_count;
+            }
+            if (tweet.favorite_count == 0)
               tweetZeroFAV += 1;
+            if (tweet.retweet_count == 0)
+              tweetZeroRT += 1;
           });
           return {
             totalRetweet: totalRetweet,
@@ -115,10 +128,16 @@ app.post("/user", function(req, res) {
           profile_image_url: data[1].profile_image_url,
           metrics: metrics
         },
-        tweets = data[0].map(function(obj) {
+        tweets = data[0].filter(function(obj){
+          return obj;
+        }).map(function(obj) {
+          var time = new Date(obj.created_at);
           var rObj = {
             id: obj.id,
             created_at: obj.created_at,
+            time: time.getHours() + ":" + time.getMinutes(),
+            hour: time.getHours(),
+            min: time.getMinutes() * (0.6),
             retweet_count: obj.retweet_count,
             favorite_count: obj.favorite_count,
             favorited: obj.favorited,
@@ -127,7 +146,10 @@ app.post("/user", function(req, res) {
             engagement: (obj.favorite_count + obj.retweet_count) / obj.user.followers_count
           };
           return rObj;
+        }).filter(function(obj) {
+          return obj;
         });
+      //console.log(machine_learning.compute(tweets));
       res.json({
         "user": user,
         "tweets": tweets
