@@ -3,6 +3,7 @@
 var express = require("express"),
   app = express(),
   config_t = require("./pwd.js"),
+  machine_learning = require("./machine_learning/compute.js"),
   Q = require('q'),
   bodyParser = require('body-parser'),
   Twit = require('twit'),
@@ -100,10 +101,10 @@ app.post("/user", function(req, res) {
           data[0].forEach(function(tweet, index) {
             totalRetweet += tweet.retweet_count || 0;
             totalFav += tweet.favorite_count || 0;
-            if (!tweet.retweeted)
-              tweetZeroRT += 1;
-            if (!tweet.favorited)
+            if (tweet.favorite_count == 0)
               tweetZeroFAV += 1;
+            if (tweet.retweet_count == 0)
+              tweetZeroRT += 1;
           });
           return {
             totalRetweet: totalRetweet,
@@ -138,6 +139,7 @@ app.post("/user", function(req, res) {
           };
           return rObj;
         });
+      console.log(machine_learning.compute());
       res.json({
         "user": user,
         "tweets": tweets
