@@ -98,7 +98,12 @@ app.post("/user", function(req, res) {
             totalFav = 0,
             tweetZeroFAV = 0;
 
-          data[0].forEach(function(tweet, index) {
+          data[0].filter(function(obj) {
+            if (!obj.retweeted_status)
+              return obj;
+            else
+              return false
+          }).forEach(function(tweet, index) {
             if (!tweet.retweeted_status) {
               totalFav += tweet.favorite_count;
               totalRetweet += tweet.retweet_count;
@@ -129,7 +134,10 @@ app.post("/user", function(req, res) {
           metrics: metrics
         },
         tweets = data[0].filter(function(obj) {
-          return obj;
+          if (!obj.retweeted_status)
+            return obj;
+          else
+            return false
         }).map(function(obj) {
           var time = new Date(obj.created_at);
           var rObj = {
@@ -153,7 +161,7 @@ app.post("/user", function(req, res) {
       res.json({
         "user": user,
         "tweets": tweets,
-        "results" : results
+        "results": results
       });
     });
 });
