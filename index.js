@@ -135,6 +135,8 @@ app.post("/user", function(req, res) {
             id: obj.id,
             created_at: obj.created_at,
             time : time.getHours() + ":" + time.getMinutes(),
+            hour: time.getHours()*(0.6),
+            min : time.getMinutes()*(0.6),
             retweet_count: obj.retweet_count,
             favorite_count: obj.favorite_count,
             favorited: obj.favorited,
@@ -144,7 +146,7 @@ app.post("/user", function(req, res) {
           };
           return rObj;
         });
-      console.log(machine_learning.compute());
+      console.log(machine_learning.compute(tweets));
       res.json({
         "user": user,
         "tweets": tweets

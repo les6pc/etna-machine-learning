@@ -1,7 +1,7 @@
 var ml = require('machine_learning');
 
 module.exports = {
-  compute: function() {
+  compute: function(tweets) {
 
     var data = [
       ['slashdot', 'USA', 'yes', 18],
