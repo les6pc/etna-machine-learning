@@ -1,40 +1,27 @@
 var ml = require('machine_learning');
+var limdu = require('limdu');
+var colorClassifier = new limdu.classifiers.NeuralNetwork();
 
 module.exports = {
   compute: function(tweets) {
-
-    var data = [
-      ['slashdot', 'USA', 'yes', 18],
-      ['google', 'France', 'yes', 23],
-      ['digg', 'USA', 'yes', 24],
-      ['kiwitobes', 'France', 'yes', 23],
-      ['google', 'UK', 'no', 21],
-      ['(direct)', 'New Zealand', 'no', 12],
-      ['(direct)', 'UK', 'no', 21],
-      ['google', 'USA', 'no', 24],
-      ['slashdot', 'France', 'yes', 19],
-      ['digg', 'USA', 'no', 18, ],
-      ['google', 'UK', 'no', 18, ],
-      ['kiwitobes', 'UK', 'no', 19],
-      ['digg', 'New Zealand', 'yes', 12],
-      ['slashdot', 'UK', 'no', 21],
-      ['google', 'UK', 'yes', 18],
-      ['kiwitobes', 'France', 'yes', 19]
-    ];
-    var result = ['None', 'Premium', 'Basic', 'Basic', 'Premium', 'None', 'Basic', 'Premium', 'None', 'None', 'None', 'None', 'Basic', 'None', 'Basic', 'Basic'];
-
-    var dt = new ml.DecisionTree({
-      data: data,
-      result: result
-    });
-
-    dt.build();
-
-    // dt.print();
-
-  //  console.log("Classify : ", dt.classify(['(direct)', 'USA', 'yes', 5]));
-    dt.prune(1.0); // 1.0 : mingain.
-    dt.print();
-    return dt.classify(['(direct)', 'USA', 'yes', 5]);
+    return {
+      matin : "09:15",
+      soir: "18:40"
+    };
   }
 }
+
+colorClassifier.trainBatch([
+    {input: { r: 0.03, g: 0.7, b: 0.5 }, output: 0},  // black
+    {input: { r: 0.16, g: 0.09, b: 0.2 }, output: 1}, // white
+    {input: { r: 0.5, g: 0.5, b: 1.0 }, output: 1}   // white
+    ]);
+
+console.log(colorClassifier.classify({ r: 1, g: 0.4, b: 0 }));  // 0.99 - almost white
+
+
+var birdClassifier = new limdu.classifiers.Winnow({
+    default_positive_weight: 1,
+    default_negative_weight: 1,
+    threshold: 0
+});
