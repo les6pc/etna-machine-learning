@@ -13,6 +13,20 @@
     <title></title>
 </head>
 <body>
+    <div id="profil" class="hidden">
+        <table>
+            <tr>
+                <td id="img-profil"></td>
+                <td id="screen_name-profil" class="bold"></td>
+                <td id="name-profil"></td>
+                <div class="pull-right">
+                <td id="status-profil"></td>
+                <td id="friends-profil"></td>
+                <td id="followers-profil"></td>
+            </tr>
+        </table>
+    </div>
+
     <section class="cd-section">
         <div class="cd-block">
             <div class="container valign">
@@ -20,8 +34,14 @@
                     <img id="clock" src="img/clock.png" alt="clock img">
                     ptimal Time to Tweet
                 </h1>
-                <form>
+                <form id="username-search">
                     <input id="username" type="text" placeholder="@JohnDoe">
+                    <div id="loader" class="hidden">
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                    </div>
+                    <div id="result" class="hidden">
+                        <p class="erorr">Ce profil Twitter n'existe pas.</p>
+                    </div>
                 </form>
             </div>
             <div id="features">

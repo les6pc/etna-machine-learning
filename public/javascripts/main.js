@@ -154,4 +154,55 @@ jQuery(document).ready(function($){
 		animating = true;
         $('body,html').animate({'scrollTop': target.offset().top}, 500, function(){ animating = false; });
 	}
+
+
+	// Search Twitter profile
+
+	var screen_name = "";
+	$('#username-search').on('submit', function(e) {
+		e.preventDefault();
+		screen_name = $("#username").val();
+		var jsonUrl = "search/"+screen_name;
+		var postUrl = "user";
+		$('#loader').removeClass('hidden');
+		$('#result, #profil').addClass('hidden');
+		getJsonUser(jsonUrl);
+		postJsonUser(postUrl);
+	});
+
+	function getJsonUser(jsonUrl) {
+		$.getJSON(jsonUrl, function (json) {
+			$('#loader').addClass('hidden');
+			if (json.errors) {
+				$('#result').removeClass('hidden');
+			}
+			else {
+				profilBar(json.profile_image_url, json.screen_name, json.name, json.statuses_count, json.friends_count, json.followers_count);
+				if (!animating) {
+					if ($('.cd-section.is-visible').next().length > 0) smoothScroll($('.cd-section.is-visible').next());
+				}
+			}
+		});
+	}
+
+	function postJsonUser(postUrl) {
+		var data = { 'screen_name' : screen_name};
+		$.ajax({
+		    url: postUrl,
+		    type: 'POST',
+		    data: JSON.stringify(data),
+		    contentType: 'application/json; charset=utf-8',
+		    dataType: 'json'
+		});
+	}
+
+	function profilBar(img, screen_name, name, statuses, friends, followers) {
+		$("#profil").removeClass('hidden');
+		$("#img-profil").html('<img src="'+img+'" alt="profil img">');
+		$("#screen_name-profil").html("@"+screen_name);
+		$("#name-profil").html(name);
+		$("#status-profil").html("<small>Tweets</small>"+statuses);
+		$("#friends-profil").html("<small>Abonnements</small>"+friends);
+		$("#followers-profil").html("<small>Abonnés</small>"+followers);
+	}
 });

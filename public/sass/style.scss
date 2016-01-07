@@ -63,13 +63,6 @@ Main Components
 	}
 }
 
-.valign{
-	position: relative;
-	top: 50%;
-	@include transform(translateY(-50%));
-	@include font-smoothing;
-}
-
 #username{
 	margin: 50px auto;
 	display: block;
@@ -117,6 +110,36 @@ Main Components
 	width: 50px;
 	margin-right: -7px;
 	vertical-align: bottom;
+}
+
+#loader {
+	text-align: center;
+	font-size: 32px;
+	color: #f7f7f7;
+}
+
+#result p{
+	text-align: center;
+	font-size: 16px;
+	color: $error;
+}
+
+#profil {
+	position: fixed;
+	top: 20px;
+	width: 70%;
+	left: 15%;
+	background: #fff;
+	color: $color-1;
+	border: 1px solid #e2e2e2;
+	z-index: 100000;
+	td{
+		padding: 10px 30px 10px 10px;
+	}
+	small{
+		display: block;
+		color: #c2c2c2;
+	}
 }
 
 .cd-section h1 {
