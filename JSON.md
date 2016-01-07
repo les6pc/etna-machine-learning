@@ -8,6 +8,10 @@ POST /user
 
 ```
 
+```
+GET /search/:screen_name
+```
+
 USER
 ------------------
 id
