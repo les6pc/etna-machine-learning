@@ -14,10 +14,10 @@ var express = require("express"),
   helmet = require('helmet'),
   port = process.env.PORT || 5000;
 
-if (!db.message)
+/*if (!db.message)
   console.log("Launching with " + "./data/db.json".underline.green);
 else
-  console.log("DB not found");
+  console.log("DB not found");*/
 
 var initTrain = [];
 db.forEach(function(el, i){
@@ -26,9 +26,9 @@ db.forEach(function(el, i){
     output : (db) ? 1 : 0
   };
 });
-console.log("Finished db import".underline.green);
+//console.log("Finished db import".underline.green);
 Classifier.trainBatch(initTrain);
-console.log("Finished initial training".underline.green);
+//console.log("Finished initial training".underline.green);
 
 var config = {
     me: 'DylanGDFR', // Le compte a rt
@@ -55,7 +55,7 @@ var config = {
   };
 
   var tu = require('tuiter')(config.keys);
-  
+
 //Promise
 var TwitGet = function(link, options, callback) {
   var deferred = Q.defer();
@@ -186,7 +186,7 @@ app.post("/user", function(req, res) {
         }
         return rObj;
       });
-      console.log("Starting the second training and predicting ".underline.blue);
+    //  console.log("Starting the second training and predicting ".underline.blue);
       Classifier.trainBatch(train);
       res.json({
         "user": user,
@@ -201,7 +201,7 @@ app.post("/user", function(req, res) {
     });
 });
 
-app.get("/lists/members/:slug", function(req, res) {
+app.get("/lists/members/:slug/:screen_name", function(req, res) {
   if (!req.params)
     res.status(400).json({
       "message": "Missing slug /:slug"
@@ -209,7 +209,7 @@ app.get("/lists/members/:slug", function(req, res) {
   else
     T.get('lists/members', {
 		slug: req.params.slug,
-		owner_screen_name: "DylanGDFR",
+		owner_screen_name: req.params.screen_name,
 		cursor: "-1"
     }, function(err, user) {
       if (!user)
@@ -218,28 +218,30 @@ app.get("/lists/members/:slug", function(req, res) {
         });
       else
 	    var members = [];
-		var res = [];
+		var tab = [];
 		tu.listMembers({owner_screen_name: config.me,
 			slug: config.myList
 		},
 		function(error, data){
 			if (!error) {
 				for (var i=0; i < data.users.length; i++) {
-					res.push(
+					tab.push(
 						{
 							'favs':data.users[i].favourites_count,'retweets':data.users[i].status.retweet_count,'followers':data.users[i].followers_count,'geoloc':data.users[i].status.geo,'date':data.users[i].created_at
 						}
 					);
 				}
-				console.log(res);
+				tab.forEach(function(obj){
+          console.log(JSON.stringify(obj));
+        })
+        res.end();
 			} else {
-				console.log(error);
-				console.log(data);
+				//console.log(error);
+				//console.log(data);
 			}
 		});
     });
 });
 
 app.listen(port);
-console.log("running on localhost:".underline.red + port);
-
+//console.log("running on localhost:".underline.red + port);

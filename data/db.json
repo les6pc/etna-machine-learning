@@ -1,1 +1,1561 @@
-[{},{}]
+[{
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13313,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105277,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8031,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13313,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105277,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8037,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13313,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105278,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8042,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13316,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105282,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8062,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13316,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105283,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8064,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13316,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105283,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8085,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13316,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105283,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8091,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13316,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105283,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8093,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13316,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105284,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8099,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13316,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105284,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8100,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13316,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105285,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8100,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13316,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105285,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8101,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+}, {
+  "favs": 160,
+  "retweets": 3,
+  "followers": 64,
+  "geoloc": null,
+  "date": "Thu Oct 08 14:13:00 +0000 2015"
+}, {
+  "favs": 21,
+  "retweets": 2,
+  "followers": 857,
+  "geoloc": null,
+  "date": "Fri Sep 04 09:20:18 +0000 2015"
+}, {
+  "favs": 2212,
+  "retweets": 21,
+  "followers": 13317,
+  "geoloc": null,
+  "date": "Fri Jun 05 20:43:34 +0000 2015"
+}, {
+  "favs": 13,
+  "retweets": 131,
+  "followers": 1299,
+  "geoloc": null,
+  "date": "Mon Mar 30 11:24:17 +0000 2015"
+}, {
+  "favs": 1829,
+  "retweets": 10,
+  "followers": 251,
+  "geoloc": null,
+  "date": "Sat Dec 27 17:44:20 +0000 2014"
+}, {
+  "favs": 5,
+  "retweets": 5,
+  "followers": 155,
+  "geoloc": null,
+  "date": "Sun Nov 23 18:15:45 +0000 2014"
+}, {
+  "favs": 319,
+  "retweets": 1,
+  "followers": 81,
+  "geoloc": null,
+  "date": "Thu May 15 12:43:13 +0000 2014"
+}, {
+  "favs": 425,
+  "retweets": 40,
+  "followers": 105286,
+  "geoloc": null,
+  "date": "Wed Nov 20 17:38:47 +0000 2013"
+}, {
+  "favs": 86,
+  "retweets": 3,
+  "followers": 2929,
+  "geoloc": null,
+  "date": "Mon Sep 02 14:48:06 +0000 2013"
+}, {
+  "favs": 487,
+  "retweets": 8,
+  "followers": 1706,
+  "geoloc": null,
+  "date": "Thu Jan 17 09:09:28 +0000 2013"
+}, {
+  "favs": 1669,
+  "retweets": 1,
+  "followers": 318,
+  "geoloc": null,
+  "date": "Fri Apr 20 16:29:08 +0000 2012"
+}, {
+  "favs": 0,
+  "retweets": 2,
+  "followers": 5059,
+  "geoloc": null,
+  "date": "Mon Jan 02 09:23:44 +0000 2012"
+}, {
+  "favs": 1472,
+  "retweets": 8102,
+  "followers": 1529,
+  "geoloc": null,
+  "date": "Wed May 25 19:21:09 +0000 2011"
+}, {
+  "favs": 41,
+  "retweets": 0,
+  "followers": 15353,
+  "geoloc": null,
+  "date": "Thu May 19 17:47:45 +0000 2011"
+}, {
+  "favs": 5,
+  "retweets": 1,
+  "followers": 250,
+  "geoloc": null,
+  "date": "Fri Aug 20 17:05:07 +0000 2010"
+}, {
+  "favs": 2215,
+  "retweets": 8,
+  "followers": 2064,
+  "geoloc": null,
+  "date": "Thu Aug 12 07:50:24 +0000 2010"
+}, {
+  "favs": 631,
+  "retweets": 1,
+  "followers": 5415,
+  "geoloc": null,
+  "date": "Fri Jul 30 23:22:03 +0000 2010"
+}, {
+  "favs": 122,
+  "retweets": 88,
+  "followers": 1417,
+  "geoloc": null,
+  "date": "Tue Jun 08 19:23:18 +0000 2010"
+}, {
+  "favs": 1526,
+  "retweets": 19,
+  "followers": 5120,
+  "geoloc": null,
+  "date": "Wed Mar 10 14:46:07 +0000 2010"
+}, {
+  "favs": 1121,
+  "retweets": 0,
+  "followers": 10047,
+  "geoloc": null,
+  "date": "Tue Jan 19 14:22:06 +0000 2010"
+} ]
