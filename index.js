@@ -7,9 +7,7 @@ var express = require("express"),
   limdu = require('limdu'),
   Classifier = new limdu.classifiers.NeuralNetwork(),
   bodyParser = require('body-parser'),
-  db = require('./data/db.json') || {
-    message: "Db not found"
-  },
+  db = require('./data/db.json'),
   Twit = require('twit'),
   colors = require('colors'),
   favicon = require('serve-favicon'),
@@ -182,8 +180,7 @@ app.post("/user", function(req, res) {
       var train = tweets.map(function(obj) {
         var rObj = {
           input: {
-            engagement: obj.engagement,
-            time: new Date(obj.created_at).getTime()
+            time: new Date(obj.created_at).getHours()
           },
           output: (obj.engagement >= 0.4) ? 1 : 0
         }
