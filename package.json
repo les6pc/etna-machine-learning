@@ -24,9 +24,11 @@
     "body-parser": "~1.14.2",
     "colors": "^1.1.2",
     "express": "~4.13.3",
+    "helmet": "^1.0.1",
     "lodash": "~3.10.1",
     "machine_learning": "0.0.8",
     "q": "^1.4.1",
+    "serve-favicon": "^2.3.0",
     "tuiter": "~0.2.12",
     "twit": "^2.1.1"
   },

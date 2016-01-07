@@ -7,6 +7,8 @@ var express = require("express"),
   bodyParser = require('body-parser'),
   Twit = require('twit'),
   colors = require('colors'),
+  favicon = require('serve-favicon'),
+  helmet = require('helmet'),
   port = process.env.PORT || 5000;
 // Variables de ftp env utilisées
 
@@ -47,6 +49,14 @@ var TwitGet = function(link, options, callback) {
 };
 
 app.use(bodyParser.json());
+// Use helmet to secure Express headers
+app.use(helmet.xframe());
+app.use(helmet.xssFilter());
+app.use(helmet.nosniff());
+app.use(helmet.ienoopen());
+app.disable('x-powered-by');
+app.use(bodyParser.json());
+//app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use(express.static(__dirname + "/public"));
 
 app.get("/search/:id", function(req, res) {
