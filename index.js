@@ -37,6 +37,8 @@ var config = {
     count: '3200'
   };
 
+  var tu = require('tuiter')(config.keys);
+  
 //Promise
 var TwitGet = function(link, options, callback) {
   var deferred = Q.defer();
@@ -80,10 +82,10 @@ app.get("/search/:id", function(req, res) {
 });
 
 app.post("/user", function(req, res) {
-  req.body.count = '3200';
-  if (!req.body || !req.body.screen_name)
+  //req.body.count = '3200';
+  if (!req.body || !req.body.screen_name || !req.body.count)
     res.status(400).json({
-      "message": "Missing Screen name"
+      "message": "Missing Screen name or countTweet!"
     });
   else
     Q.all([
@@ -166,5 +168,45 @@ app.post("/user", function(req, res) {
     });
 });
 
+app.get("/lists/members/:slug", function(req, res) {
+  if (!req.params)
+    res.status(400).json({
+      "message": "Missing slug /:slug"
+    });
+  else
+    T.get('lists/members', {
+		slug: req.params.slug,
+		owner_screen_name: "DylanGDFR",
+		cursor: "-1"
+    }, function(err, user) {
+      if (!user)
+        res.status(400).json({
+          "message": "not found"
+        });
+      else
+	    var members = [];
+		var res = [];
+		tu.listMembers({owner_screen_name: config.me,
+			slug: config.myList
+		},
+		function(error, data){
+			if (!error) {
+				for (var i=0; i < data.users.length; i++) {
+					res.push(
+						{
+							'favs':data.users[i].favourites_count,'retweets':data.users[i].status.retweet_count,'followers':data.users[i].followers_count,'geoloc':data.users[i].status.geo,'date':data.users[i].created_at
+						}
+					);
+				}
+				console.log(res);
+			} else {
+				console.log(error);
+				console.log(data);
+			}
+		});
+    });
+});
+
 app.listen(port);
 console.log("running on localhost:".underline.red + port);
+
