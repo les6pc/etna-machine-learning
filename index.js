@@ -129,14 +129,14 @@ app.post("/user", function(req, res) {
           metrics: metrics
         },
         tweets = data[0].filter(function(obj){
-
+          return obj;
         }).map(function(obj) {
           var time = new Date(obj.created_at);
           var rObj = {
             id: obj.id,
             created_at: obj.created_at,
             time: time.getHours() + ":" + time.getMinutes(),
-            hour: time.getHours() * (0.6),
+            hour: time.getHours(),
             min: time.getMinutes() * (0.6),
             retweet_count: obj.retweet_count,
             favorite_count: obj.favorite_count,
