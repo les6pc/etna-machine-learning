@@ -98,9 +98,8 @@ app.post("/user", function(req, res) {
             totalFav = 0,
             tweetZeroFAV = 0;
 
-          console.log(data[0][0]);
           data[0].forEach(function(tweet, index) {
-            if (!tweet.retweeted_status){
+            if (!tweet.retweeted_status) {
               totalFav += tweet.favorite_count;
               totalRetweet += tweet.retweet_count;
             }
@@ -129,14 +128,16 @@ app.post("/user", function(req, res) {
           profile_image_url: data[1].profile_image_url,
           metrics: metrics
         },
-        tweets = data[0].map(function(obj) {
+        tweets = data[0].filter(function(obj){
+
+        }).map(function(obj) {
           var time = new Date(obj.created_at);
           var rObj = {
             id: obj.id,
             created_at: obj.created_at,
-            time : time.getHours() + ":" + time.getMinutes(),
-            hour: time.getHours()*(0.6),
-            min : time.getMinutes()*(0.6),
+            time: time.getHours() + ":" + time.getMinutes(),
+            hour: time.getHours() * (0.6),
+            min: time.getMinutes() * (0.6),
             retweet_count: obj.retweet_count,
             favorite_count: obj.favorite_count,
             favorited: obj.favorited,
@@ -145,8 +146,10 @@ app.post("/user", function(req, res) {
             engagement: (obj.favorite_count + obj.retweet_count) / obj.user.followers_count
           };
           return rObj;
+        }).filter(function(obj) {
+          return obj;
         });
-      console.log(machine_learning.compute(tweets));
+      //console.log(machine_learning.compute(tweets));
       res.json({
         "user": user,
         "tweets": tweets
