@@ -157,7 +157,14 @@ jQuery(document).ready(function($){
 
 
 	// Search Twitter profile
-
+	// $(window).on('scroll', function () {
+	// 	if ($(".wide").parent().parent().hasClass('is-visible')){
+	// 		$(".wide").removeClass('hidden');
+	// 	}
+	// 	else {
+	// 		$(".wide").addClass('hidden');
+	// 	}
+	// });
 	var screen_name = "";
 	$('#username-search').on('submit', function(e) {
 		e.preventDefault();
@@ -238,10 +245,13 @@ jQuery(document).ready(function($){
 			axisY:{
 	        	title: "Nombre de tweets"
 	      	},
-
 	      	axisX:{
 	        	title: "Heure"
 	      	},
+	      	title:{
+	  	        text: "Statistiques sur les 200 derniers tweets"
+	  	   	},
+
 			animationEnabled: true,
 			// title:{
 			// 	text: "Multi Series Spline Chart - Hide / Unhide via Legend"
