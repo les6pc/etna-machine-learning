@@ -189,7 +189,7 @@ app.post("/user", function(req, res) {
         }
         return rObj;
       });
-
+      console.log("Starting the second training and predicting ".underline.blue);
       Classifier.trainBatch(train);
       res.json({
         "user": user,
@@ -199,6 +199,8 @@ app.post("/user", function(req, res) {
           "soir" : "19:23"
         }
       });
+      console.log('Finished'.underline.green);
+      return res.end();
     });
 });
 
