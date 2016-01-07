@@ -3,15 +3,34 @@
 var express = require("express"),
   app = express(),
   config_t = require("./pwd.js"),
-  machine_learning = require("./machine_learning/compute.js"),
   Q = require('q'),
+  limdu = require('limdu'),
+  Classifier = new limdu.classifiers.NeuralNetwork(),
   bodyParser = require('body-parser'),
+  db = require('./data/db.json') || {
+    message: "Db not found"
+  },
   Twit = require('twit'),
   colors = require('colors'),
   favicon = require('serve-favicon'),
   helmet = require('helmet'),
   port = process.env.PORT || 5000;
-// Variables de ftp env utilisées
+
+if (!db.message)
+  console.log("Launching with " + "./data/db.json".underline.green);
+else
+  console.log("DB not found");
+
+var initTrain = [];
+db.forEach(function(el, i){
+  initTrain[i] = {
+    input : el,
+    output : (db) ? 1 : 0
+  };
+});
+console.log("Finished db import".underline.green);
+Classifier.trainBatch(initTrain);
+console.log("Finished initial training".underline.green);
 
 var config = {
     me: 'DylanGDFR', // Le compte a rt
@@ -156,12 +175,27 @@ app.post("/user", function(req, res) {
           return rObj;
         }).filter(function(obj) {
           return obj;
-        }),
-        results = machine_learning.compute(tweets);
+        });
+
+      var train = tweets.map(function(obj) {
+        var rObj = {
+          input: {
+            engagement: obj.engagement,
+            time: new Date(obj.created_at).getTime()
+          },
+          output: (obj.engagement >= 0.4) ? 1 : 0
+        }
+        return rObj;
+      });
+
+      Classifier.trainBatch(train);
       res.json({
         "user": user,
         "tweets": tweets,
-        "results": results
+        "results": {
+          "matin" : "09:45",
+          "soir" : "19:23"
+        }
       });
     });
 });
