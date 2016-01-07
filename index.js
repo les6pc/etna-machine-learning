@@ -128,7 +128,7 @@ app.post("/user", function(req, res) {
           profile_image_url: data[1].profile_image_url,
           metrics: metrics
         },
-        tweets = data[0].filter(function(obj){
+        tweets = data[0].filter(function(obj) {
           return obj;
         }).map(function(obj) {
           var time = new Date(obj.created_at);
@@ -148,11 +148,12 @@ app.post("/user", function(req, res) {
           return rObj;
         }).filter(function(obj) {
           return obj;
-        });
-      //console.log(machine_learning.compute(tweets));
+        }),
+        results = machine_learning.compute(tweets);
       res.json({
         "user": user,
-        "tweets": tweets
+        "tweets": tweets,
+        "results" : results
       });
     });
 });
