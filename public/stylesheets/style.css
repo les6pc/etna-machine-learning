@@ -11975,6 +11975,13 @@ Main Components
 }
 
 /* line 130, ../sass/style.scss */
+#chartContainer {
+  height: 300px;
+  width: 80%;
+  padding: 0 10%;
+}
+
+/* line 136, ../sass/style.scss */
 #profil {
   position: fixed;
   top: 20px;
@@ -11985,17 +11992,17 @@ Main Components
   border: 1px solid #e2e2e2;
   z-index: 100000;
 }
-/* line 139, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 #profil td {
   padding: 10px 30px 10px 10px;
 }
-/* line 142, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 #profil small {
   display: block;
   color: #c2c2c2;
 }
 
-/* line 148, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .cd-section h1 {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -12004,19 +12011,19 @@ Main Components
   margin-top: -200px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 148, ../sass/style.scss */
+  /* line 154, ../sass/style.scss */
   .cd-section h1 {
     font-size: 3.2rem;
   }
 }
 @media only screen and (min-width: 1170px) {
-  /* line 148, ../sass/style.scss */
+  /* line 154, ../sass/style.scss */
   .cd-section h1 {
     font-size: 4.2rem;
   }
 }
 
-/* line 167, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .cd-block, .cd-half-block {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -12027,7 +12034,7 @@ Main Components
   backface-visibility: hidden;
 }
 
-/* line 172, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .cd-block {
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;
@@ -12035,14 +12042,14 @@ Main Components
   -o-transform-origin: center center;
   transform-origin: center center;
 }
-/* line 175, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .cd-section:first-of-type .cd-block {
   height: 100vh;
   background-image: url("../img/bg-2.jpg");
   background-size: cover;
 }
 @media only screen and (min-width: 1170px) {
-  /* line 172, ../sass/style.scss */
+  /* line 178, ../sass/style.scss */
   .cd-block {
     position: fixed;
     width: 100%;
@@ -12053,77 +12060,81 @@ Main Components
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
     visibility: hidden;
   }
-  /* line 193, ../sass/style.scss */
+  /* line 199, ../sass/style.scss */
   .cd-section:first-of-type .cd-block {
     visibility: visible;
   }
-  /* line 197, ../sass/style.scss */
+  /* line 203, ../sass/style.scss */
   .cd-block > * {
     visibility: visible;
   }
 }
 
-/* line 203, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .icon {
   font-size: 48px;
   position: absolute;
-  top: 25%;
+  top: 20%;
   width: 100%;
   text-align: center;
 }
-/* line 209, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .icon .fa-heart {
   color: #e74c3c;
 }
-/* line 212, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .icon .fa-retweet {
   color: #e3ca76;
 }
+/* line 221, ../sass/style.scss */
+.icon .fa-moon-o {
+  color: #fff;
+}
 
-/* line 217, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .cd-half-block {
   background: #ffffff;
   color: #263b40;
 }
-/* line 221, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .cd-half-block:nth-of-type(1) {
   height: 60vh;
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 227, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 .cd-half-block p {
   font-size: 1.8rem;
   line-height: 1.2;
   color: #888;
 }
-/* line 231, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .cd-half-block p span {
   color: #263b40;
   font-weight: bold;
 }
-/* line 237, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .cd-section:nth-of-type(2) .cd-half-block:first-of-type {
   background: #f7f7f7;
 }
-/* line 241, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .cd-section:nth-of-type(3) .cd-half-block:first-of-type {
   background-image: url("../img/bg-1.jpg");
   background-size: cover;
 }
-/* line 246, ../sass/style.scss */
-.cd-section:nth-of-type(4) .cd-half-block:first-of-type {
-  background: #f7f7f7;
+/* line 255, ../sass/style.scss */
+.cd-section:nth-of-type(4) .cd-half-block:nth-of-type(2) {
+  background: #111;
 }
 @media only screen and (min-width: 1170px) {
-  /* line 217, ../sass/style.scss */
+  /* line 226, ../sass/style.scss */
   .cd-half-block {
     height: 100vh !important;
     width: 50%;
     position: absolute;
     top: 0;
   }
-  /* line 256, ../sass/style.scss */
+  /* line 265, ../sass/style.scss */
   .cd-half-block p {
     position: absolute;
     left: 50%;
@@ -12139,7 +12150,28 @@ Main Components
     padding: 0 15%;
     font-size: 2.4rem;
   }
-  /* line 264, ../sass/style.scss */
+  /* line 273, ../sass/style.scss */
+  .cd-half-block h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    padding: 0 15%;
+    font-size: 10rem;
+    text-align: center;
+  }
+  /* line 280, ../sass/style.scss */
+  .cd-half-block h2.light {
+    color: #fff;
+  }
+  /* line 285, ../sass/style.scss */
   .cd-section:nth-of-type(even) .cd-half-block:first-of-type, .cd-section:nth-of-type(odd) .cd-half-block:nth-of-type(2) {
     left: 0;
     -webkit-transform: translateX(-100%);
@@ -12148,7 +12180,7 @@ Main Components
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
-  /* line 270, ../sass/style.scss */
+  /* line 291, ../sass/style.scss */
   .cd-section:nth-of-type(odd) .cd-half-block:first-of-type, .cd-section:nth-of-type(even) .cd-half-block:nth-of-type(2) {
     right: 0;
     -webkit-transform: translateX(100%);
@@ -12159,7 +12191,7 @@ Main Components
   }
 }
 
-/* line 278, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 .cd-vertical-nav {
   position: fixed;
   z-index: 1;
@@ -12173,7 +12205,7 @@ Main Components
   transform: translateY(-50%);
   display: none;
 }
-/* line 285, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .cd-vertical-nav a {
   display: block;
   height: 40px;
@@ -12187,7 +12219,7 @@ Main Components
   -moz-transition: opacity 0.2s 0s, visibility 0.2s 0s;
   transition: opacity 0.2s 0s, visibility 0.2s 0s;
 }
-/* line 298, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .cd-vertical-nav a.cd-prev {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -12196,7 +12228,7 @@ Main Components
   transform: rotate(180deg);
   margin-bottom: 10px;
 }
-/* line 303, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 .cd-vertical-nav a.inactive {
   visibility: hidden;
   opacity: 0;
@@ -12205,7 +12237,7 @@ Main Components
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
 }
 @media only screen and (min-width: 1170px) {
-  /* line 278, ../sass/style.scss */
+  /* line 299, ../sass/style.scss */
   .cd-vertical-nav {
     display: block;
   }
