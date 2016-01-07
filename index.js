@@ -152,8 +152,8 @@ app.get("/search/:id", function(req, res) {
 });
 
 app.post("/user", function(req, res) {
-  //req.body.count = '3200';
-  if (!req.body || !req.body.screen_name || !req.body.count)
+  req.body.count = '3200';
+  if (!req.body || !req.body.screen_name)
     res.status(400).json({
       "message": "Missing Screen name or countTweet!"
     });
