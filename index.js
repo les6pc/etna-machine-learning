@@ -1,4 +1,5 @@
 // START HEROKU
+"use strict";
 var express = require("express"),
   app = express(),
   config_t = require("./pwd.js"),
