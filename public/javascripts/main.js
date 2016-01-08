@@ -204,7 +204,8 @@ jQuery(document).ready(function($){
 				if (!animating) {
 					if ($('.cd-section.is-visible').next().length > 0) smoothScroll($('.cd-section.is-visible').next());
 				}
-				showMetrics(json.user.statuses_count, json.user.metrics.totalRetweet, json.user.metrics.totalFav, json.user.metrics.tweetZeroRT, json.user.metrics.tweetZeroFAV, json.user.metrics.averageRT, json.user.metrics.averageFAV);
+				showMetrics(json.user.statuses_count, json.user.metrics.totalRetweet, json.user.metrics.totalFav, json.user.metrics.tweetZeroRT, json.user.metrics.tweetZeroFAV, json.user.metrics.averageRT, json.user.metrics.averageFAV, json.tweets.length);
+				printChart(json);
 			},
 			error: function(){
 				$('#loader').addClass('hidden');
@@ -223,10 +224,11 @@ jQuery(document).ready(function($){
 		$("#followers-profil").html("<small>Abonnés</small>"+followers);
 	}
 
-	function showMetrics(statuses, totalRT, totalFav, noRT, noFav, avRT, avFav) {
+	function showMetrics(statuses, totalRT, totalFav, noRT, noFav, avRT, avFav, tLength) {
 		avRT = Math.round(avRT * 10) / 10;
 		avFav = Math.round(avFav * 10) / 10;
 
+		$(".tLength").html(tLength);
 		$(".totalStatuses").html(statuses);
 		$("#totalRT").html(totalRT);
 		$("#averageRT").html(avRT);
@@ -237,9 +239,38 @@ jQuery(document).ready(function($){
 		$("#noFav").html(noFav);
 	}
 
+	function printChart(json) {
+		var retweets = json.tweets.map(function (obj){
+			var t = {
+				x : obj.hour + (obj.min / 100),
+				y : obj.retweet_count
+			}
+			return t;
+		}).sort(function (a, b) {
+			if (a.x > b.x)
+			  return 1;
+			if (a.x < b.x)
+			  return -1;
+			// a doit être égale à b
+			return 0;
+		});
+
+		var favs = json.tweets.map(function (obj){
+			var t = {
+				x : obj.hour + (obj.min / 100),
+				y : obj.favorite_count
+			}
+			return t;
+		}).sort(function (a, b) {
+			if (a.x > b.x)
+			  return 1;
+			if (a.x < b.x)
+			  return -1;
+			// a doit être égale à b
+			return 0;
+		});
 
 
-	window.onload = function () {
 		var chart = new CanvasJS.Chart("chartContainer",
 		{
 			axisY:{
@@ -262,34 +293,14 @@ jQuery(document).ready(function($){
 				showInLegend: true,
 				legendText: "Retweet",
 				color: "#e3ca76",   
-				dataPoints: [
-					{ x: 10, y: 51 },
-					{ x: 20, y: 45},
-					{ x: 30, y: 50 },
-					{ x: 40, y: 62 },
-					{ x: 50, y: 95 },
-					{ x: 60, y: 66 },
-					{ x: 70, y: 24 },
-					{ x: 80, y: 32 },
-					{ x: 90, y: 16}
-				]
+				dataPoints: retweets
 				},
 				{
 				type: "spline",
 				showInLegend: true,
 				legendText: "Favoris",
 				color: "#e74c3c",  
-				dataPoints: [
-					{ x: 10, y: 21 },
-					{ x: 20, y: 44},
-					{ x: 30, y: 35 },
-					{ x: 40, y: 45 },
-					{ x: 50, y: 75 },
-					{ x: 60, y: 58 },
-					{ x: 70, y: 18 },
-					{ x: 80, y: 30 },
-					{ x: 90, y: 11}
-				]
+				dataPoints: favs
 				}
 			],
 			legend: {
