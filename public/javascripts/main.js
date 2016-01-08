@@ -282,7 +282,7 @@ jQuery(document).ready(function($){
 	        	title: "Heure"
 	      	},
 	      	title:{
-	  	        text: "Statistiques sur les 200 derniers tweets"
+	  	        text: "Statistiques sur les "+ json.tweets.length +" derniers tweets"
 	  	   	},
 
 			animationEnabled: true,
