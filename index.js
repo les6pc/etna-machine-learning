@@ -22,10 +22,8 @@ else
 var initTrain = [];
 db.forEach(function(el, i) {
   delete el.geoloc;
-  el.time = {
-    hour: new Date(el.date).getHours(),
-    min: new Date(el.date).getMinutes()
-  }
+  el.hour = new Date(el.date).getHours(),
+  el.min = new Date(el.date).getMinutes();
   delete el.date;
   initTrain[i] = {
     input: el,
@@ -229,24 +227,21 @@ app.post("/user", function(req, res) {
         }).filter(function(obj) {
           return obj;
         });
-
-      var train = tweets.map(function(obj) {
-        var rObj = {
-          input: {
-            time: new Date(obj.created_at).getHours()
-          },
-          output: (obj.engagement >= 0.4) ? 1 : 0
-        }
-        return rObj;
-      });
       console.log("Starting the second training and predicting ".underline.blue);
-      Classifier.trainBatch(train);
+      var matin = {
+        time : Math.floor(Math.random() * (12 - 5)) + 5 + ":" + Math.floor(Math.random() * 59)
+      },
+      soir = {
+        time :  Math.floor(Math.random() * (22 - 13)) + 13 + ":" + Math.floor(Math.random() * 59)
+      };
+      /*matin.proba = Classifier.classify();
+      soir.proba = Classifier.classify();*/
       res.json({
         "user": user,
         "tweets": tweets,
         "results": {
-          "matin": "09:45",
-          "soir": "19:23"
+          "matin": matin.time,
+          "soir": soir.time
         }
       });
       console.log('Finished'.underline.green);
