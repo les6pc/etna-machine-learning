@@ -204,7 +204,7 @@ jQuery(document).ready(function($){
 				if (!animating) {
 					if ($('.cd-section.is-visible').next().length > 0) smoothScroll($('.cd-section.is-visible').next());
 				}
-				showMetrics(json.user.statuses_count, json.user.metrics.totalRetweet, json.user.metrics.totalFav, json.user.metrics.tweetZeroRT, json.user.metrics.tweetZeroFAV, json.user.metrics.averageRT, json.user.metrics.averageFAV, json.tweets.length);
+				showMetrics(json.user.statuses_count, json.user.metrics.totalRetweet, json.user.metrics.totalFav, json.user.metrics.tweetZeroRT, json.user.metrics.tweetZeroFAV, json.user.metrics.averageRT, json.user.metrics.averageFAV, json.tweets.length, json.results.matin, json.results.soir);
 				printChart(json);
 			},
 			error: function(){
@@ -224,7 +224,7 @@ jQuery(document).ready(function($){
 		$("#followers-profil").html("<small>Abonnés</small>"+followers);
 	}
 
-	function showMetrics(statuses, totalRT, totalFav, noRT, noFav, avRT, avFav, tLength) {
+	function showMetrics(statuses, totalRT, totalFav, noRT, noFav, avRT, avFav, tLength, morning, afternoon) {
 		avRT = Math.round(avRT * 10) / 10;
 		avFav = Math.round(avFav * 10) / 10;
 
@@ -237,6 +237,8 @@ jQuery(document).ready(function($){
 		$("#totalFav").html(totalFav);
 		$("#averageFav").html(avFav);
 		$("#noFav").html(noFav);
+		$("#morning").html(morning);
+		$("#afternoon").html(afternoon);
 	}
 
 	function printChart(json) {
